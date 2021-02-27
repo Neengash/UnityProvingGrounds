@@ -6,7 +6,6 @@ public class AccelerationMovement : MonoBehaviour
 {
     private Vector3 acceleration;
     private Rigidbody rb;
-    [SerializeField] private float speed;
     [SerializeField] private float forceMultiplication;
     private float previousDirection;
 
