@@ -16,7 +16,7 @@ public class AccelerationMovement : MonoBehaviour
 
     void Update() {
         acceleration = Input.acceleration;
-        // Si acaba de canviar sa direcció, reset de les velocitats;
+        // After changing directions reset speed for faster turns
         if (previousDirection * acceleration.x < 0) {
             rb.velocity = new Vector3();
         }
